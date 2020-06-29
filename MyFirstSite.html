@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="p5.js"> </script>
+</head>
+<body>
+<script id="script" type="text/javascript">
+
+
+function setup(){
+createCanvas(displayWidth, displayHeight);
+background(255);
+}
+
+function draw(){
+scale(2);
+background(94, 206, 214); //blue background
+noStroke(); //no outline on the brown and black road
+fill(135, 114, 73); //brown color set
+rect(0, 200, displayWidth, 200); //brown box
+fill(0); //black color set
+rect(0, 250, displayWidth, 100); //black box set as road
+strokeWeight(5); //line width
+stroke(255); //white color
+line(9, 300, 46, 300); //first dash on road
+line( 96, 300, 137, 300); //rest of the road lines
+line(184, 300, 222, 300);
+line(275, 300, 315, 300);
+line(373, 300, 411, 300);
+strokeWeight(2); //smaller line width
+stroke(255, 255, 255); //white color
+fill(255, 0, 0); //red color
+rect(111, 293, 60, 40); //red box for car
+fill(133, 125, 125); //silver color
+ellipse(112, 335, 20, 20); //wheel 1
+ellipse( 170, 335, 20, 20); //wheel 2
+noStroke(); //rid of the line width
+fill(255); //white color
+ellipse(109, 46, 50, 50); //cloud uno
+ellipse(139, 31, 50, 50);
+ellipse(164, 57, 50, 50);
+ellipse(136, 62, 50, 50);
+ellipse(269, 146, 50, 50); //dos +160 to X, +100 to Y
+ellipse(299, 131, 50, 50);
+ellipse(324, 157, 50, 50);
+ellipse(296, 162, 50, 50);
+
+}
+
+</script> </body> </html>
